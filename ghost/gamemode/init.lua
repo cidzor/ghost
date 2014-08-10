@@ -14,8 +14,15 @@ end
 
 function GM:PlayerInitialSpawn(ply)		--function run at initial, first spawn
 	print("Player: " .. ply:Nick() .. " has spawned.")
-	
-	ply:SetGamemodeTeam(0)		--manual set team id
+	ply:SetGamemodeTeam(0)		--manual set team id, 0 = Ghosts
+end
+
+
+--CURRENTLY WORKING ON THIS--
+function GM:PrePlayerDraw(ply)
+	print("getTeamId is set to: " .. getTeamId(ply))
+	local teamId = getTeamId(ply)
+	if teamId == 0 then return true end
 end
 
 
