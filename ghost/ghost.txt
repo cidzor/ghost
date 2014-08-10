@@ -1,0 +1,14 @@
+"ghost"
+{
+	"base"		"base"
+	"title"		"Ghost"
+	"maps"		"^cid_"
+	"menusystem"	"1"
+	"workshopid"	""
+
+	"settings"
+	{
+		// TODO: Fill this in!
+	}
+
+}
